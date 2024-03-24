@@ -1,0 +1,91 @@
+body {
+  font-family: sans-serif;
+  background-image: url('Sources/BackgroundImg.avif');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  flex-grow: 4;
+  text-align: end;
+
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 30px;
+
+}
+
+.navbar a {
+  text-decoration: none;
+  width: 100;
+  display: block;
+  font-family: cursive;
+  font-weight: bold;
+  text-align: center;
+  font-size: 26px;
+  color: gray;
+  font-style: italic;
+}
+
+.navbar a:hover {
+  border-radius: 50px;
+  font-size: 28px;
+  transition: transform 0.3s;
+  text-decoration: dotted;
+  color: rgb(197, 193, 193);
+  text-transform: uppercase;
+}
+
+#maintitle {
+  font-family: cursive;
+  font-size: 50px;
+}
+
+#secondmaintitle {
+  font-family: cursive;
+  color: rgb(116, 67, 67);
+}
+
+@media only screen and (max-width:1350px) {
+  .navbar a {
+
+    font-size: 20px;
+
+  }
+}
+
+@media only screen and (max-width:1118px) {
+  .navbar a {
+
+    font-size: 16px;
+
+  }
+}
+
+@media only screen and (max-width:946px) {
+  .navbar a {
+
+    font-size: 15px;
+
+  }
+}
+
+@media only screen and (max-width:783px) {
+  .navbar a {
+
+    font-size: 14px;
+
+  }
+}

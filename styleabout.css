@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #191919;
+}
+
+.navbar ul {
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  flex-grow: 4;
+  text-align: end;
+
+}
+
+
+.navbar li {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 30px;
+
+}
+
+.navbar a {
+  text-decoration: none;
+  width: 100;
+  display: block;
+  font-family: cursive;
+  font-weight: bold;
+  text-align: center;
+  font-size: 26px;
+  color: gray;
+  font-style: italic;
+}
+
+.navbar a:hover {
+  border-radius: 50px;
+  font-size: 28px;
+  transition: transform 0.3s;
+  text-decoration: dotted;
+  color: rgb(197, 193, 193);
+  text-transform: uppercase;
+}
+
+.about {
+  width: 100%;
+  padding: 78px 0px;
+  background-color: #191919;
+}
+
+.about img {
+  height: auto;
+  width: 550px;
+  margin-right: 150px;
+}
+
+.about-text {
+  /* width: 550px; */
+  width: 100%;
+}
+
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.about-text h1 {
+  color: white;
+  font-size: 80px;
+  text-align: capitalize;
+  margin-bottom: 20px;
+}
+
+.about-text h5 {
+  color: white;
+  font-size: 25px;
+  text-align: capitalize;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.about-text p {
+  color: #fcfc;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+  padding: 10px;
+}
+
+button {
+  background: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  margin: auto;
+  display: block;
+
+}
+
+button a {
+  color: white;
+}
+
+button:hover {
+  background: transparent;
+  border: 2px solid
+}
+
+@media only screen and (max-width:1119px) {
+
+  .about-text h1 {
+
+    font-size: 60px;
+
+  }
+
+}
+
+@media only screen and (max-width:1023px) {
+
+  .navbar a {
+    font-size: 22px;
+  }
+
+  .about-text h1 {
+
+    font-size: 40px;
+
+  }
+
+  .about-text p {
+
+    line-height: 20px;
+    font-size: 16px;
+
+  }
+
+}
+
+@media only screen and (max-width:937px) {
+
+  .navbar a {
+    font-size: 14px;
+  }
+
+  .main {
+    display: ruby;
+  }
+
+  .about img {
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-text h1 {
+
+    font-size: 34px;
+    text-align: center;
+
+  }
+
+  .about-text p {
+
+    line-height: 20px;
+    font-size: 14px;
+
+  }
+
+  button {
+    display: block;
+
+  }
+
+  @media only screen and (max-width:700px) {
+
+    .about img {
+      width: 70%;
+    }
+  }
+
+}
+
+@media only screen and (max-width:550px) {
+
+  .about img {
+    width: 70%;
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContactPage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+        <ul class="menu">
+          <li><a href="index.html"><i class="bi bi-house"></i>Home</a></li>
+          <li><a href="about.html"><i class="bi bi-file-earmark-person-fill"></i>About Me</a></li>
+          <li><a href="photogallery.html"><i class="bi bi-images"></i>Photo Gallery</a></li>
+          <li><a href="contact.html"><i class="bi bi-person-lines-fill"></i>Contact</a></li>
+        </ul>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="logo">
+        <img src="Sources/LogoBun.png" alt="" class="logo" height="250px">
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row py-5 g-3">
+        <div class="col-md-6 first_col">
+          <h1 class="text-center mt-3">Contact Me</h1>
+          <form class="p-4 mt-5">
+            <div class="mb-3">
+              <label for="name" class="form-label">Enter your name</label>
+              <input type="text" class="form-control" id="name" placeholder="Full Name" autocomplete="off">
+              <div class="error-txt">Full Name can't be blank</div>
+            </div>
+            <div class="mb-3 item">
+              <label for="email" class="form-label">Email ID</label>
+              <input type="email" class="form-control" id="email" placeholder="Email Id" autocomplete="off">
+              <div class="error-txt email">Email can't be blank</div>
+            </div>
+            <div class="mb-3 item">
+              <label for="message" class="form-label">Send me a message for booking</label>
+              <textarea type="text" class="form-control" id="message"
+                placeholder="Tell me when would you wish to come and i will reply with my schedule" rows="3"
+                autocomplete="off"></textarea>
+              <div class="error-txt">Text can't be blank.</div>
+            </div>
+            <div class="mb-3 item">
+              <button class="btn btn-primary" type="submit">Send now</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <img src="/Sources/Contact1.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+      <div class="last_row">
+        <div class="row row-cols-1 row-cols-md-3 p-3">
+          <div class="col">
+            <h4><i class="bi bi-phone"></i>Phone number</h4>
+            <p class="phonenumber"> +40.773.350.171</p>
+            <p class="emailex">As well my email is example@yahoo.com</p>
+          </div>
+          <div class="col">
+            <h4><i class="bi bi-instagram"></i>Instagram</h4>
+            <p class="looking">You can find me <br> by looking for:
+            <h5 class="shorts">missice.tattoo</h5> or by pressing <h5><a
+                href="https://www.instagram.com/missice.tattoo/">here</a></h5>
+            </p>
+          </div>
+          <div class="col">
+            <h4>Where am I?</h4>
+            <p maptxt>You can find me right here!
+              <iframe class="maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.387736815777!2d24.865849776700035!3d44.854400773917696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b2bc84630db391%3A0xba8ac35bd7f97c1b!2sStrada%20Teilor%2025%2C%20Pite%C8%99ti!5e0!3m2!1sro!2sro!4v1708538055777!5m2!1sro!2sro"
+                width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="javascript.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
